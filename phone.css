@@ -1,0 +1,45 @@
+.container{
+    margin: 1rem;
+}
+.header-text{
+    margin-top: 120px;
+    margin-left: 115px;
+}
+.open-navbar-icon{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
+.logo{
+    margin-top: 35px;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    height: 36%;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+}
+.card-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story-bg{
+    transform: none;
+    transform: scaleX(1.0);
+    padding: 3rem;
+    margin: 1rem;
+}
+.story{
+    transform: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story-image{
+    margin-right: 0;
+    margin-bottom: 40px;
+}

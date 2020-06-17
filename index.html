@@ -7,7 +7,65 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="screen and (max-width:980px)" href="phone.css">
+  <link rel="stylesheet" media="screen and (max-width:750px)" href="phone2.css">
+
+
   <title>The Road</title>
+  <style>
+    @media (max-width: 640px) {
+      .contact-form {
+        width: 50rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .contact-form {
+        width: 40rem;
+      }
+
+      .contact-heading {
+        text-align: center;
+        font-size: 6rem;
+      }
+      .col{
+        flex-direction: column;
+      }
+      .input-groups .input-group{
+        width: 100%;
+      }
+    }
+    @media (max-width: 500px){
+      .contact-form {
+        width: 32rem;
+      }
+      .contact-heading {
+        font-size: 4.5rem;
+      }
+      .footer-link{
+        margin: 5px;
+        padding: 0;
+        letter-spacing: 0em;
+      }
+    }
+    @media (max-width: 820px){
+      .footer-link{
+        margin: 0;
+        padding: 10px 30px;
+      }
+    }
+    @media (max-width: 620px){
+      .footer-link{
+        padding: 10px 12px;
+      }
+    }
+    @media (max-width: 420px){
+      .footer-link{
+        padding: 10px 4px;
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -143,95 +201,92 @@
     <!-- Stories -->
     <section class="stories">
       <div class="video-container">
-        <video  class="bg-video"  autoplay muted loop>
+        <video class="bg-video" autoplay muted loop>
           <source src="images/video.mp4" type="video/mp4">
         </video>
       </div>
       <div class="stories-wrapper">
-       
+
         <div class="story-bg">
           <div class="story">
-            <img
-              src="images/story-img-1.jpg"
-              alt="Customer image"
-              class="story-image"
-            />
+            <img src="images/story-img-1.jpg" alt="Customer image" class="story-image" />
             <div class="story-text">
               <h1 class="story-heading">
                 These were the best days of this year
               </h1>
               <p class="story-paragraph">
-                Our world is amazing. Travel really allows you to see the best and the worst in people and helps you do something to protect our planet from the dangers that face it. And before you run out of time. After all, life is short and no time is better than now.
+                Our world is amazing. Travel really allows you to see the best and the worst in people and helps you do
+                something to protect our planet from the dangers that face it. And before you run out of time. After
+                all, life is short and no time is better than now.
               </p>
             </div>
           </div>
         </div>
         <div class="story-bg">
           <div class="story">
-            <img
-              src="images/story-img-2.jpg"
-              alt="Customer image"
-              class="story-image"
-            />
+            <img src="images/story-img-2.jpg" alt="Customer image" class="story-image" />
             <div class="story-text">
               <h1 class="story-heading">
                 I enjoyed this great tour
               </h1>
               <p class="story-paragraph">
-                The more you travel, the more you see that there are so many amazing things in the world. When you can see that it can be difficult to compromise for something, it can always be that there can always be something better in the next corner. Traveling can sometimes be about a quest for perfection. Travel with all enthusiasm. Thank you
+                The more you travel, the more you see that there are so many amazing things in the world. When you can
+                see that it can be difficult to compromise for something, it can always be that there can always be
+                something better in the next corner. Traveling can sometimes be about a quest for perfection. Travel
+                with all enthusiasm. Thank you
               </p>
             </div>
           </div>
         </div>
- </div>
-  </section>
-
-
-  <!-- end of stories -->
-  <!-- section -->
-  <section class="contact">
-   <h1 class="contact-heading">Contact Us</h1>
-    <form  class="contact-form center">
-      <div class="input-group">
-        <label >Full Name</label>
-        <input type="text" class="contact-input" placeholder="Enter Your Name">
       </div>
-      <div class="input-groups">
+    </section>
+
+
+    <!-- end of stories -->
+    <!-- section -->
+    <section class="contact">
+      <h1 class="contact-heading">Contact Us</h1>
+      <form class="contact-form center">
         <div class="input-group">
-          <label >Email</label>
-          <input type="email" class="contact-input" placeholder="Enter Your email">
+          <label>Full Name</label>
+          <input type="text" class="contact-input" placeholder="Enter Your Name">
+        </div>
+        <div class="input-groups f-width col">
+          <div class="input-group f-width">
+            <label>Email</label>
+            <input type="email" class="contact-input" placeholder="Enter Your email">
+          </div>
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="text" class="contact-input" placeholder="Enter Your phone number">
+          </div>
         </div>
         <div class="input-group">
-          <label >Phone</label>
-          <input type="text" class="contact-input" placeholder="Enter Your phone number">
+          <label>Message</label>
+          <textarea class="form-textarea" placeholder="Enter Your Message Here.."></textarea>
         </div>
+        <input type="submit" value="submit" class="form-btn">
+      </form>
+    </section>
+
+    <!-- end of section -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-list">
+        <a href="" class="footer-link">Home</a>
+        <a href="" class="footer-link">Tours</a>
+        <a href="" class="footer-link">AboutUs</a>
+        <a href="" class="footer-link">Offer</a>
+        <a href="" class="footer-link">Contact</a>
       </div>
-      <div class="input-group">
-        <label >Message</label>
-        <textarea class="form-textarea" placeholder="Enter Your Message Here.."></textarea>
-      </div>
-      <input type="submit" value="submit" class="form-btn">
-    </form>
-  </section>
-
-   <!-- end of section -->
-
-   <!-- footer -->
-
-   <footer class="footer">
-     <div class="footer-list">
-       <a href="" class="footer-link">Home</a>
-       <a href="" class="footer-link">Tours</a>
-       <a href="" class="footer-link">AboutUs</a>
-       <a href="" class="footer-link">Offer</a>
-       <a href="" class="footer-link">Contact</a>
-     </div>
-     <p class="footer-paragraph">
-       Copyright &copy; CodeAndCreate All Rights
-       Reserved
-     </p>
-   </footer>
-   <!-- End of footer -->
+      <p class="footer-paragraph">
+        Copyright &copy; CodeAndCreate All Rights
+        Reserved
+      </p>
+    </footer>
+    <!-- End of footer -->
   </div>
 </body>
 <script src="script.js"></script>
